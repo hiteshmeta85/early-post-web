@@ -65,7 +65,7 @@ const UserSignUp = (props) => {
                     mx={{base: '1rem', md: '15%', lg: 'auto'}} maxW='800px'>
                     <Heading fontSize={{base: '1.25rem', md: '2rem'}} mb={{base: '1rem', lg: '3rem'}}
                              textAlign='center' fontFamily="Raleway">Welcome! Create a new account.</Heading>
-                    <Form onSubmit={handleSubmit}>
+                    <Form onSubmit={handleSubmit} autoComplete='off'>
                         <Flex justifyContent='space-between' flexDirection={{base: 'column', md: 'row'}}>
                             <Box w={{base: '100%', md: '49%'}}>
                                 <FormLabel htmlFor='name' width='100%' mb='0'>Name</FormLabel>

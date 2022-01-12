@@ -1,4 +1,4 @@
-Early-Post-Web
+## Early-Post-Web
 
 1. cd early-post-web 
 2. Install all the packages using `npm i`
@@ -6,14 +6,13 @@ Early-Post-Web
 4. Make sure the early-post-api is running
 5. Run the server using `npm start`
 
-**Newspaper Delivery Management System**
-
-**Computer Engineering (SEM-III) Mini-Project**
+## Newspaper Delivery Management System
+### Computer Engineering (SEM-III) Mini-Project
 
 **Early Post** is a web application that let users create accounts, purchase newspapers, place orders and ask queries.
 Admin can then monitor the orders, assign delivery agents and resolve the queries.
 
-**Tech Used:**
+### Tech Used:
 
 Frontend
 
@@ -30,7 +29,7 @@ Backend
 4. PostgreSQL
 5. Redis
 
-**Sample Images**
+### Sample Images:
 
 ![](sample%20images/signup-page.png)
 ![](sample%20images/product-page.png)

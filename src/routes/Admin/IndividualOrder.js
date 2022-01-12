@@ -54,7 +54,7 @@ const IndividualOrder = () => {
             return (<>
                 <Header/>
                 <VStack bg='gray.100' px={[5, 10, 14]} py={[4,6,8]} alignItems='flex-start' spacing={[2, 4, 4]} fontFamily='Raleway'>
-                    <Heading fontWeight='800' textAlign='center' fontFamily='Raleway' mt='1rem'>Assign Delivery Boy</Heading>
+                    <Heading fontWeight='800' textAlign='center' fontFamily='Raleway' mt='1rem'>Assign Delivery Service.</Heading>
                     <Text>Order Id: {order_id}</Text>
                     <Text>Delivery Address: {user_address}</Text>
                     <Text>Delivery Pincode: {user_pincode}</Text>

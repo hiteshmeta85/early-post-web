@@ -9,7 +9,7 @@ import logo from './assets/logo.png';
 const LandingPage = (props) => {
     return (
         <Box>
-            {props.isLoggedIn ? <Redirect to='/user/home'/> : false}
+            {props.isLoggedIn && <Redirect to='/user/home'/>}
             <Header/>
             <Box mx={{base: '1rem', md: '2rem'}} fontFamily='Raleway'>
                 <Flex flexDirection={{base: 'column', md: 'row'}}>

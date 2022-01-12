@@ -14,8 +14,7 @@ const Queries = () => {
         const getAllQueries = async () => {
             try {
                 const res = await httpClient({
-                    method: 'GET',
-                    url: `${process.env.REACT_APP_API_HOST}/admin/query`,
+                    method: 'GET', url: `${process.env.REACT_APP_API_HOST}/admin/query`,
                 })
                 if (res.data.data.length !== 0) {
                     setQueryInfo(res.data.data)
@@ -65,16 +64,14 @@ const Queries = () => {
                             {queryInfo.map((query) => {
                                 const {id, title, description} = query
 
-                                return (
-                                    <Tr key={id}>
+                                return (<Tr key={id}>
                                         <Td>{id}</Td>
                                         <Td>{title}</Td>
                                         <Td>{description}</Td>
                                         <Td isNumeric><Link to={`/admin/query/${id}`}><Button bg='green.500'
                                                                                               color='white'>
                                             Reply</Button></Link></Td>
-                                    </Tr>
-                                )
+                                    </Tr>)
                             })}
                         </Tbody>
                     </Table>
@@ -82,14 +79,12 @@ const Queries = () => {
             </>)
         }
         if (didWeGetTheInfo === 'false') {
-            return (
-                <>
+            return (<>
                     <Header/>
                     <Text pt='2rem' fontSize='2rem' mx={{base: '1rem', md: '2rem'}} fontFamily='Raleway'>
                         Something went wrong.
                     </Text>
-                </>
-            )
+                </>)
         }
     }
 

@@ -32,7 +32,7 @@ const checkSession = async setIsLoggedIn => {
     }
 };
 
-function App() {
+const App = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     checkSession(setIsLoggedIn);
 
